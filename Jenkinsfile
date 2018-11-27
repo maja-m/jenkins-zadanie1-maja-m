@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'echo "Hello World Test ostateczny"'
+                bat 'git add .'
             }
         }
     }
