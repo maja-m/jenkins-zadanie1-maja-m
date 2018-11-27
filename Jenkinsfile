@@ -3,7 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'git show-ref'
+                bat 'touch readme'
+
+                bat 'git add .'
+
+bat 'git commit -m "test"'
+
+bat 'git push heroku master'
             }
         }
     }
