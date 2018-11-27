@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-bat 'git push heroku ${git rev-parse HEAD}'
+sh 'git push heroku ${git rev-parse HEAD}'
             }
         }
     }
