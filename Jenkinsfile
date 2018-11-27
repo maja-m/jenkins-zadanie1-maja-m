@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'git push heroku HEAD:master'
+                bat 'git show-ref'
             }
         }
     }
