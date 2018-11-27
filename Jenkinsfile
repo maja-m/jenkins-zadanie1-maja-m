@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'echo "Hello World Test Poll SCM"'
+                bat 'echo "Hello World Test ostateczny"'
             }
         }
     }
