@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'heroku create jenkins-zadanie1-maja-m'
                 bat 'git add .'
                 bat 'git commit -m "test"'
                 bat 'git push heroku master'
