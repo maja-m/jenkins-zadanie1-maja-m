@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-bat 'git show-ref'
-                bat 'git commit -m "Initial commit"'
-                bat 'git remote -v'
+bat 'git log -n 1'
             }
         }
     }
