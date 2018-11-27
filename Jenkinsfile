@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-sh 'git push heroku ${git rev-parse HEAD}'
+bat 'git add --all'
+                bat 'git commit -m "Initial comment"'
+                bat 'git push heroku master'
             }
         }
     }
