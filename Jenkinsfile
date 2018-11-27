@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-bat 'heroku git:remote -a jenkins-zadanie1-maja-m'
+bat 'git show-ref'
+                bat 'git commit -m "Initial commit"'
+                bat 'git remote -v'
             }
         }
     }
